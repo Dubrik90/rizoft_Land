@@ -1,0 +1,93 @@
+.swiper {
+  max-width: 1650px;
+  background: linear-gradient(112deg, #6EEC4E 0%, #FFF 100.41%);
+
+  @media (max-width: 1600px) {
+    max-width: 100%;
+  }
+
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    width: 610px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 140px;
+
+    @media (max-width: 1440px) {
+      bottom: 40px;
+    }
+    @media (max-width: 1023px) {
+      bottom: 10px;
+    }
+    @media (max-width: 1023px) {
+      width: 300px;
+    }
+
+  }
+
+  .next {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    @media (max-width: 1600px) {
+      // top: 20%;
+      // transform: translateY(0);
+    }
+    @media (max-width: 1440px) {
+      // top: 15px;
+      //  right: 15px;
+
+      svg {
+        width: 50px;
+        height: 50px;
+
+        @media (max-width: 1023px) {
+          width: 40px;
+          height: 40px;
+        }
+        @media (max-width: 425px) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+    @media (max-width: 1024px) {
+      top: 40px;
+      right: 40px;
+    }
+    @media (max-width: 425px) {
+      top: 30px;
+      right: 30px;
+    }
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 226px 135px 195px 75px;
+
+
+  @media (max-width: 1600px) {
+    padding: 200px 50px 195px 75px;
+  }
+  @media (max-width: 1440px) {
+    padding: 80px 50px 80px 50px;
+  }
+  @media (max-width: 1023px) {
+    padding: 30px;
+  }
+  @media (max-width: 767px) {
+    padding: calc(20px + (30 - 20) * ((100vw - 375px) / (767 - 375)));
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
